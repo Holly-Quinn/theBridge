@@ -1,0 +1,376 @@
+@charset "utf-8";
+
+@font-face {
+	
+	font-family: Segoe;
+	src:url("../fonts/segoeui.ttf")
+	
+}
+/* CSS Document */
+
+/* Table of Contents */
+
+
+html {
+	
+	font-size: 14px;
+		
+}
+
+
+
+.header {
+	
+	display: flex;
+	background-color: #8C1C13;
+	justify-content: flex-end;
+	
+}
+
+.logo{
+	
+	padding: 10px;
+	margin-right: auto;
+}
+
+.logo img { width: 150px;}
+
+.menuItem  {
+
+	font-family: Segoe, "Segoe UI", sans-serif;
+	font-size: 1.5rem;
+	padding: 30px;
+	color: #E7D7C1;
+	
+}
+
+.menuItem a {
+
+	font-family: Segoe, "Segoe UI", sans-serif;
+	font-size: 1.5rem;
+	padding: 30px;
+	color: #E7D7C1;
+	
+}
+
+.menuItem a:hover { 
+	
+	color: #BF4342;
+	text-decoration: none;
+	background-color: #E7D7C1;
+
+}
+
+.main {
+	
+	display:flex;
+	
+}
+
+.image {
+	
+	padding-left: 0px;
+	padding-right: 0px;
+	
+}
+
+
+.mainCard{ 
+
+	width: 30%;
+	position: absolute;
+	right: 5%;
+  	background-color: #8C1C13;
+	font-family: Segoe, "Segoe UI", sans-serif;
+	font-size: 1rem;
+	color: #FFFFFF;
+	padding: 20px;
+	padding-top: 0px;
+	
+
+}
+
+.mainCard h3 {
+	
+	padding-top: 10px;
+	color: #E7D7C1;
+	
+}
+
+.eventContainer {
+	
+	display: flex; 
+	justify-content: space-between;
+	padding-left: 5px;
+	padding-right: 5px;
+		
+}
+
+.eventCard {
+	
+	width: 100%;
+	font-family: Segoe, "Segoe UI", sans-serif;
+	font-size: 1.4rem;
+	color: #8C1C13;
+	padding:30px;
+}
+
+.eventCard p {
+	
+	color: #707070; 
+	font-size: 1rem;
+	
+}
+
+.formTitle {
+
+	font-family: Segoe, "Segoe UI", sans-serif;
+	font-size: 1.4rem;
+	color: #8C1C13;
+	padding-left: 30px;
+	
+}
+
+.formContainer {
+	
+	display: flex;
+	font-family: Segoe, "Segoe UI", sans-serif;
+	font-size: 1.4rem;
+	color: #8C1C13;
+	padding-top: 2%;
+	padding-left: 30px;
+	
+}
+
+.formSideCard {
+
+	font-family: Segoe, "Segoe UI", sans-serif;
+	color: white;
+	background-color: #8C1C13;
+	width: 220px;
+	height: 200px;
+	padding: 10px;
+	padding-bottom: 0px;
+	
+}
+
+.formSideCard p {
+	
+	font-size: 1rem;
+	
+}
+
+.formSideCard h4 {
+	
+	color: #E7D7C1;
+	
+}
+
+.formCard {
+			
+		display: flex;
+		padding: 1em;
+		flex-direction: column;
+		width: 50%;
+	}
+
+	.footer {
+		
+		padding-top: 50px;
+		display: flex;
+		flex-wrap: wrap;			
+		padding-bottom: 0px;
+	}
+	
+	.footerTop {
+		
+		height: 150px;
+		background-color: #8C1C13;
+		width: 100%;
+		flex-direction: column;
+			
+				
+	}
+
+.socialText { 
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: #E7D7C1;
+		padding-top: 1.5%;
+
+
+}
+
+.socialImg {
+	
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	
+}
+	
+.footerBottom {
+		
+	height: 30px;
+	background-color: #BF4342;
+	width: 100%;
+	padding-bottom: 0px;
+	
+}
+
+
+.mapContainer {
+	
+	 padding: 30px;
+	
+}
+
+
+#map {
+		  
+    height: 600px;  
+   
+		  
+ }
+
+/*--------------------------------MEDIA QUERIES------------------------- */
+
+@media (max-width: 600px) {
+	
+	.menuItem {
+		
+		font-size: 1.2rem;
+		padding: 0px;
+		padding-top: 30px;
+					
+	}
+	
+	.logo { width: 10px;}
+			
+	.main {
+	
+		flex-direction: column;
+		background-color: #8C1C13;
+	
+	}
+	
+	.mainCard{ 
+
+		width: 100%;
+		position: static;
+		background-color: #8C1C13;
+		font-family: Segoe, "Segoe UI", sans-serif;
+		color: #FFFFFF;
+		padding: 5px;
+		order: 2;
+		font-size: 1rem;
+				
+	}
+		
+	.image {
+
+		padding: 2px 2px 5px;
+		order: 1;
+		
+	}
+	
+	.eventContainer {
+		
+		flex-direction: column;
+		
+		
+	}
+	
+	.eventCard {
+		
+		width: 100%;
+		padding: 0px;
+				
+	}
+	
+	.formContainer {
+		
+		flex-direction: column;
+		color: #8C1C13;
+		padding-left: 5px;
+		flex-wrap: wrap;
+		padding-right: 5px;
+	}
+	
+	.formTitle {
+		
+		padding-left: 5px;
+		
+	}	
+	
+	.formSideCard {
+		
+		width: 100%;
+		padding: 5px;
+		order: 1;
+		height: 120px;
+		
+		
+	}
+	
+	.formCard {
+		
+		width: 100%;
+		order: 2;
+		
+	}
+	
+	.socialText {
+		
+		padding-bottom: 0px;
+		
+	}
+	
+	.socialImg { padding-top: 10px;}
+	
+	#map {
+		  
+    height: 300px;  
+   
+		  
+ }
+	
+	
+}
+
+
+@media (max-width: 1120px) {
+	
+	.mainCard {
+		
+		font-size: 1rem;
+	}
+	
+	.mainCard img { display: none;}
+	
+}
+
+
+	
+@media (max-width: 900px) {
+	
+	.mainCard {
+		
+		font-size: 0.8rem;
+		width: 100%;
+		right: 0%;
+	}
+	
+	
+		.eventContainer {
+		
+		flex-direction: column;
+		
+		
+	}
+	
+}
+
+
